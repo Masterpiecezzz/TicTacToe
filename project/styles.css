@@ -1,0 +1,221 @@
+*,*::after,*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A2CDCD;
+    gap: calc(1.5vh + 1.5vw);
+    flex-direction: column;
+}
+body div.winbox
+{
+    height: calc(3vh + 3vw);
+    width: calc(8vh + 8vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7D9D9C;
+    border-radius: calc(1vh + 1vw);
+    box-shadow: 0 0 calc(1vh + 1vw) 0 #000;
+}
+body div.winbox p
+{
+    font-size: calc(1vh + 1vw);
+    color: #A2CDCD;
+    user-select: none;
+    font-family: 'Varela Round', sans-serif;
+}
+body div.container
+{
+    position: relative;
+    height: calc(32.5vh + 10vw);
+    width: calc(32.5vh + 10vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 calc(1vh + 1vw) 0 #000;
+    border-radius: calc(.6vh + .6vw);
+    background-color: #7D9D9C;
+}
+body div.container div.wonline
+{
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 0, 0,.5);
+}
+body div.container div.one
+{
+    height: calc(.5vh + .5vw);
+    width: 100%;
+    top: calc(18% - calc(.25vh + .25vw));
+    left: 0;
+    transform: rotate(0);
+    border-radius: 0;
+}
+body div.container div.two
+{
+    height: calc(.5vh + .5vw);
+    width: 100%;
+    top: calc(50% - calc(.25vh + .25vw));
+    left: 0;
+    transform: rotate(0);
+    border-radius: 0;
+}
+body div.container div.three
+{
+    height: calc(.5vh + .5vw);
+    width: 100%;
+    top: calc(81.5% - calc(.25vh + .25vw));
+    left: 0;
+    transform: rotate(0);
+    border-radius: 0;
+}
+body div.container div.four
+{
+    height: 100%;
+    width: calc(.5vh + .5vw);
+    top: 0;
+    left: calc(18% - calc(.25vh + .25vw));
+    transform: rotate(0);
+    border-radius: 0;
+}
+body div.container div.five
+{
+    height: 100%;
+    width: calc(.5vh + .5vw);
+    top: 0;
+    left: calc(50% - calc(.25vh + .25vw));
+    transform: rotate(0);
+    border-radius: 0;
+}
+body div.container div.six
+{
+    height: 100%;
+    width: calc(.5vh + .5vw);
+    top: 0;
+    left: calc(81.5% - calc(.25vh + .25vw));
+    transform: rotate(0);
+    border-radius: 0;
+}
+body div.container div.seven
+{
+    height: calc(.5vh + .5vw);
+    width: 139%;
+    top: calc(50% - calc(.25vh + .25vw));
+    left: -19.5%;
+    transform: rotate(45deg);
+    border-radius: calc(.2vh + .2vw);
+}
+body div.container div.eight
+{
+    height: calc(.5vh + .5vw);
+    width: 139%;
+    top: calc(50% - calc(.25vh + .25vw));
+    left: -19.5%;
+    transform: rotate(135deg);
+    border-radius: calc(.2vh + .2vw);
+}
+body div.container div
+{
+    height: calc(30vh + 10vw);
+    width: calc(30vh + 10vw);
+    display: grid;
+    text-align: center;
+    background-color: transparent;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+body div.container div.box
+{
+    position: relative;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+}
+body div.container div.active
+{
+    cursor: pointer;
+    border-radius: 0;
+    transition: border-radius .1s linear;
+    border: calc(.2vh + .2vw) solid #FFBC5F;
+}
+body div.container div.active:hover
+{
+    border-radius: calc(.6vh + .6vw);
+}
+body div.container div.inactive
+{
+    cursor: auto;
+    border: calc(.2vh + .2vw) solid #FFD89C;
+}
+body div.container div.box span
+{
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    font-size: calc(1.5vh + 1.5vw);
+    user-select: none;
+    font-weight: 700;
+    color: #7D9D9C;
+    z-index: 0;
+}
+body div.container div.box p
+{
+    font-family: 'Varela Round', sans-serif;
+    font-size: calc(3vh + 3vw);
+    user-select: none;
+    
+    z-index: 1;
+}
+body div.container div.box p.text
+{
+    color: #000;
+}
+body div.container div.box p.hover
+{
+    color: #627c7b;
+}
+body div.userbox
+{
+    height: calc(3vh + 3vw);
+    width: calc(3vh + 3vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: border-radius .1s linear;
+    background-color: #7D9D9C;
+    cursor: pointer;
+    box-shadow: 0 0 calc(1vh + 1vw) 0 #000;
+}
+body div.userbox:hover, body div.userbox:hover div
+{
+    border-radius: calc(.5vh + .5vw);
+}
+body div.userbox div
+{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A2CDCD;
+    border-radius: 50%;
+    transition: border-radius .1s linear;
+}
+body div.userbox div i
+{
+    font-size: calc(1vh + 1vw);
+    color: #627c7b;
+}
